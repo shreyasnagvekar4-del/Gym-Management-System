@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../javascript/home.js" defer></script>
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <title></title>
+</head>
+<body>
+    <div class="menu-bar">
+    <div class="menu-left">
+        <div class="hamburger-menu" onclick="open_menu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span id="txt_menu" onclick="open_menu()">Menu</span>
+    </div>
+        <h1 id="gym-name">Empire Fitness</h1>
+    </div>
+
+    <div class="op_menu">
+        <span onclick="close_menu()" class="close_btn"> ✖ Close Menu</span>
+        <span>
+            🏠 Home
+        </span>
+        <span onclick="open_pd()">
+            👤 Personal Details
+        </span>
+        <span onclick="open_m()">💳 Membership</span>
+        <span onclick="open_a()">📅 Attendance</span>
+        <span onclick="open_mq()">
+            📷 My QR Code
+        </span>
+        <span onclick="open_c()">
+            ❓ Help and Support
+        </span>
+        <span onclick="logout()">
+            🚪 Logout
+        </span>
+    </div>
+
+    <div class="dashboard">
+        <h1 id="welcomeText"class="welcome-txt">
+            Welcome 👋
+        </h1>
+
+        <div class="card-container">
+            <div class="card">
+                <h2>Membership</h2>
+                <p id="plan">None</p>
+            </div>
+
+            <div class="card">
+                <h2>Expires In</h2>
+                <p id="expiresIn">Not Available</p>
+            </div>
+
+            <div class="card">
+                <h2>Attendance</h2>
+                <p id="attendance">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Status</h2>
+                <p id="status">Inactive</p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="qr_generator">
+        <h1>📷 Generate Your Membership QR Code ➜ </h1>
+        <button class="qr-redirect" onclick="open_mq()">Click here</button>
+    </div>
+    <div class="workout-section">
+        <h1 class="workout-guide">Daily Workout Guide</h1>
+
+        <div class="workout">
+        <div class="daily-r">
+            <h2>Monday/Thursday</h2>
+            <p>Back+Biceps</p>
+            
+        </div>
+        <div class="daily-r">
+            <h2>Tuesday/Friday</h2>
+            <p>Chest+Triceps</p>
+        </div>
+
+        <div class="daily-r">
+            <h2>Wednesday/Saturday</h2>
+            <p>Shoulder+Legs</p>
+        </div>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../javascript/personal.js" defer></script>
+    <link rel="stylesheet" href="../css/personal_details.css">
+    
+    <title></title>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-left">
+            <div class="back_btn">
+                <span id="back_arrow" onclick="back_btn()">←</span>
+            </div>
+            <span id="back_txt">Back</span>
+        </div>  
+            
+            <div class="ps_details">
+                <div class="insider">
+                <h1 id="ps_name">👤 Personal Details</h1>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="box">
+        <div class="left-side">
+            <img id="profileImage" class="profile" src="../images/default.png" />
+
+            <input type="file"
+                   id="profileUpload"
+                   accept="image/*"
+                   style="display:none">
+
+            <button onclick="document.getElementById('profileUpload').click()" id="changepic">
+                Change Photo
+            </button>
+
+            <h1 id="username"></h1>
+            <input type="text" id="userName" placeholder="Enter your name" class="edit-input" disabled style="display:none;" />
+            <div class="member_id">
+                <p><strong>Member ID:</strong></p>
+                <p id="memberid">EMP1023</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="details-row">
+                <strong class="label">📧 Email :</strong>
+                <span id="userEmail"></span>
+            </div>
+            
+                <div class="details-row">
+                    <strong class="label">📱 Phone :</strong>
+                    <span id="userPhone"></span>
+                </div>
+
+                <div class="details-row">
+                    <strong class="label">🎂 Age :</strong>
+                    <span id="ageTxt"></span>
+                    <input type="number" id="userAge" min="1" max="100" placeholder="Enter your age" class="edit-input" disabled style="display:none;"/>
+                </div>
+
+                <div class="details-row">
+                    <strong class="label">⚧ Gender :</strong>
+                    <span id="genderTxt"></span>
+                    <select id="genderInput" class="edit-input" style="display:none">
+                    <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="details-row">
+                    <strong class="label">🏠 Address :</strong>
+                    <span id="addressTxt"></span>
+                    <input type="text" id="userAddress" placeholder="Enter your address" class="edit-input"  disabled style="display:none;"/>
+                </div>
+
+            <div class="details-row">
+                <strong class="label">🏋 Membership :</strong>
+                <span id="membership"></span>
+            </div>
+
+            <div class="details-row">
+                <strong class="label">📅 Expires    :</strong>
+                <span id="expiry"></span>
+            </div>
+
+            <button id="editBtn" onclick="editprofile()">Edit Profile</button>
+            <button id="saveBtn" onclick="saveProfile()" style="display:none;">Save</button>
+            </div>
+        </div>
+
+</body>
+</html>
