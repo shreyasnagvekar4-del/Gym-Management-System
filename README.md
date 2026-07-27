@@ -129,21 +129,26 @@ Run the ASP.NET Core API and open the frontend pages.
 
 ## 📷 Screenshots
 
-Add screenshots of:
+### Login Page
+![Login Page](Screenshots/LoginPage.png)
 
-- Login Page
-- Registration Page
-- Member Dashboard
-- QR Code
-- Attendance Calendar
-- Membership Page
-- Admin Dashboard
-- QR Scanner
-- Member Management
-- Attendance Management
+### Registration Page
+![Registration Page](Screenshots/RegisterationPage.png)
 
----
+### Member Dashboard
+![Member Dashboard](Screenshots/ClientDashboard.png)
 
+### Admin Dashboard
+![Admin Dashboard](Screenshots/AdminDashboard.png)
+
+### Attendance Page
+![Attendance Page](Screenshots/AttendancePage.png)
+
+### QR Scanner
+![QR Scanner](Screenshots/QRscanner.png)
+
+### QR Scanner (Attendance Successful)
+![QR Scanner 2](Screenshots/QRscanner2.png)
 ## 🔐 Security
 
 - Passwords are securely hashed using **BCrypt**.
