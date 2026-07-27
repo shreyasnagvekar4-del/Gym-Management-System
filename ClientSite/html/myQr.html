@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=display-width, initial-scale=1.0" />
+    <script src="../javascript/myQr.js" defer></script>
+    <link rel="stylesheet" href="../css/myQr.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-left">
+            <div class="back-btn">
+                <span id="back_btn" onclick="back()">←</span>
+            </div>
+            <span id="back-txt">Back</span>
+        </div>
+        <div class="m-details">
+            <div class="insider">
+                <h1 id="mq-name">📷 My QR Code</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="qr-container">
+
+        <div id="qrcode"></div>
+
+        <div class="member-card">
+
+            <p><strong>Name:</strong> <span id="memberName"></span></p>
+
+            <p><strong>Member ID:</strong> <span id="memberId"></span></p>
+
+            <p><strong>Membership:</strong> <span id="memberPlan"></span></p>
+
+            <p><strong>Status:</strong> <span id="memberStatus"></span></p>
+
+            <p><strong>Expiry:</strong> <span id="memberExpiry"></span></p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

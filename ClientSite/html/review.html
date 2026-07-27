@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"  content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/review.css" />
+    <script src="../javascript/review.js" defer></script>
+    <title></title>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-left">
+            <div class="back-btn">
+                <span id="back_btn" onclick="back()">←</span>
+            </div>
+            <span id="back-txt">Back</span>
+        </div>
+        <div class="r-details">
+            <div class="insider">
+                <h1 id="review_txt">Membership Review</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mreview-box">
+        <div class="rl">
+            <div class="left">
+                <div class="rinfo">
+                    <h2>
+                        👤 Member Information
+                    </h2>
+                    <p><strong>Name:</strong> <span id="reviewName"></span></p>
+
+                    <p><strong>Email:</strong> <span id="reviewEmail"></span></p>
+                </div>
+                <div class="rinfo">
+                    <h2>💳 Selected Plan</h2>
+
+                    <p><strong>Plan:</strong> <span id="reviewPlan"></span></p>
+
+                    <p><strong>Duration:</strong> <span id="reviewDuration"></span></p>
+
+                    <p><strong>Price:</strong> ₹<span id="reviewPrice"></span></p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rinfo">
+                    <h2>📅 Membership Period</h2>
+                    <p><strong>Start Date:</strong> <span id="startDate"></span></p>
+
+                    <p><strong>Expiry Date:</strong> <span id="expiryDate"></span></p>
+                </div>
+                <div class="rinfo">
+                    <h2>
+                        💰 Payment Summary
+                    </h2>
+                    <p><strong>Membership Fee:</strong> ₹<span id="membershipFee"></span></p>
+
+                    <p><strong>Tax:</strong> ₹0</p>
+
+                    <hr>
+
+                    <p><strong>Total:</strong> ₹<span id="totalPrice"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="terms">
+
+            <input type="checkbox" id="agree">
+
+            <label for="agree">
+
+                I agree to the Gym Membership Terms & Conditions.
+
+            </label>
+
+        </div>
+        <div class="review-buttons">
+
+            <button class="backReview" onclick="history.back()">
+                Back
+            </button>
+
+            <button class="paymentBtn" disabled>
+                Pay with Razorpay
+            </button>
+
+        </div>
+    </div>
+
+    <div id="paymentPopup" class="payment-Popup">
+        <div class="paymentBox">
+            <h2>Processing Payment</h2>
+            <div class="loader">
+            </div>
+            <p>Please wait while we verify your payment...</p>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
