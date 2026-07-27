@@ -1,0 +1,45 @@
+﻿body {
+    margin: 0;
+    background: #f3f4f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: #111827;
+    color: white;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+    .dashboard h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    font-size: 18px;
+    transition: .2s;
+}
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+.logout {
+    background: #dc3545;
+    color: white;
+}
